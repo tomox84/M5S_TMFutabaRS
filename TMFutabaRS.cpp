@@ -926,9 +926,6 @@ void TMFutabaRS::ChangeID(unsigned char newID, HardwareSerial* SerialOut) {
     txData[sizeData - 1] ^= txData[i]; // ID～DATAまでのXOR
   }
 
-  // データ表示
-  printData("-- Change ID ------------", txData, sizeData);
-
   // データ送信
   SendBin(txData, sizeData);
   delay(1000);

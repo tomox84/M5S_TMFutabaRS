@@ -63,13 +63,6 @@ void setup() {
     Serial.println("Cannot read map 42-59");
   }
 
-  // 文字のバックの描画
-  M5.Lcd.fillRect(0, 224, 320, 16, WHITE);
-
-  // 文字の表示
-  M5.Lcd.setTextColor(RED);
-  M5.Lcd.setCursor(28 + 1, 224 + 1);
-  M5.Lcd.print("-- Press Any Buttom --");
 
   // ボタンの何かを押すまで待機
   while ((M5.BtnA.wasPressed() == false) && (M5.BtnB.wasPressed() == false) && (M5.BtnC.wasPressed() == false)) {
@@ -99,7 +92,7 @@ void setup() {
 
   DispBack();
 
-  //  servo1.ChangeID( 5, &Serial);
+//    servo1.ChangeID( 6, &Serial);
   //  servo1.ResetFactoryDefault(&Serial);
 }
 

@@ -46,9 +46,6 @@ class TMFutabaRS {
     // タイムアウトのループカウント
     const int _cntMax = _rxTimeout / _loopWaitMs;
 
-    // データのシリアルへの出力
-    void printData(String title, unsigned char* txData, size_t sizeData);
-
     // データの送信
     void SendBin(unsigned char* txData, size_t sizeData);
 
